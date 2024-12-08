@@ -1,0 +1,50 @@
+.payment-snapshot {
+
+        width: 97%;
+        background-color: #ffffff;
+        border: 1px solid #00c0f9;
+        margin: 20px;
+        
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: "Arial", sans-serif;
+          
+    
+  }
+  
+  .week-container {
+    margin-bottom: 10px;
+  }
+  
+  .week-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00c0f9;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .week-header span {
+    font-size: 18px;
+  }
+  
+  .payment-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .payment-table th,
+  .payment-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .payment-table th {
+    background-color: #e3f7fc;
+  }
+  

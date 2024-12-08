@@ -1,0 +1,55 @@
+/* Container for all buttons */
+.btn-container {
+  display: flex;
+  justify-content: space-between; /* Align items on opposite sides */
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  gap: 1rem; /* Space between select buttons */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+/* Styling for select dropdowns */
+.btn-select {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  flex: 1; /* Makes all select buttons equal width */
+  max-width: 200px; /* Ensures they don't get too wide */
+}
+
+.btn-select:focus {
+  outline: none;
+  border-color: #29b6f6;
+}
+
+/* Button to download report */
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #29b6f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping */
+  margin-left: auto; /* Pushes the button to the far right */
+}
+
+.btn-download:hover {
+  background-color: #0288d1;
+}
+
+/* Ensure icons in buttons are spaced nicely */
+.btn-download svg {
+  margin-right: 8px;
+}

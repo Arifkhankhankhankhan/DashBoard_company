@@ -1,0 +1,46 @@
+ .gap-analysis {
+  width: 97%;
+  background-color: #ffffff;
+  border: 1px solid #00c0f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+ 
+  }
+ 
+  
+  .gap-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+  
+  .gap-table th,
+  .gap-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .gap-table th {
+    background-color: #39CEF3;
+    color: #263238;
+  }
+  h2{
+    
+   margin-top: 15px;
+   margin-bottom: 15px;
+    font-size: 1.1rem;
+    width: 15%;
+     background-color: #39CEF3;
+     color: white ;
+     padding: 8px;
+   
+  } 
+
+
+ 
+  
+
+
+

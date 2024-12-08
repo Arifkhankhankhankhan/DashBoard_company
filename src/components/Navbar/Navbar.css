@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #263238;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 40px; 
+  }
+  
+  .video, .notification, .account {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+  }
+
+  
+  .nav-right p {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 20px;
+  }
+  
+  .line {
+    width: 150px; 
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+  
+ 
+  .nav-right img:hover {
+    opacity: 0.7;
+  }
+  
+  .nav-right p:hover {
+    color: #3a7cff;
+  }
+  
+  .nav-right .flex2{
+    gap: 3px;
+  }
+  .line{
+    bottom:-4px;
+  }
+
+
+
+ 
