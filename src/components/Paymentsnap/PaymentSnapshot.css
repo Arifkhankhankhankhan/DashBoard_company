@@ -1,50 +1,115 @@
 .payment-snapshot {
+  width: 97%;
+  background-color: #ffffff;
+  border: 1px solid #00c0f9;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+}
 
-        width: 97%;
-        background-color: #ffffff;
-        border: 1px solid #00c0f9;
-        margin: 20px;
-        
-        
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-family: "Arial", sans-serif;
-          
-    
+.payment-snapshot h2 {
+  margin-left: -10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  width: fit-content;
+  background-color: #39cef3;
+  color: white;
+  padding: 8px;
+}
+
+.week-container {
+  margin: 10px;
+}
+
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00c0f9;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.week-header:hover {
+  background-color: #009bd9;
+}
+
+.week-header span {
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.payment-table th,
+.payment-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.payment-table th {
+  background-color: #e3f7fc;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .payment-snapshot {
+    width: 100%;
+    margin: 10px auto;
   }
-  
-  .week-container {
-    margin-bottom: 10px;
-  }
-  
+
   .week-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00c0f9;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
   }
-  
+
   .week-header span {
-    font-size: 18px;
+    font-size: 16px;
   }
-  
-  .payment-table {
-    width: 90%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
+
   .payment-table th,
   .payment-table td {
-    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .week-header {
+    font-size: 14px;
+  }
+
+  .payment-table {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .week-header {
     padding: 10px;
-    border: 1px solid #ddd;
+    font-size: 12px;
   }
-  
-  .payment-table th {
-    background-color: #e3f7fc;
+
+  .payment-table {
+    font-size: 12px;
   }
-  
+
+  .payment-table th,
+  .payment-table td {
+    padding: 5px;
+  }
+}
+

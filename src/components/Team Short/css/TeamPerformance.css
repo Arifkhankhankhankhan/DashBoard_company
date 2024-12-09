@@ -1,0 +1,101 @@
+/* Container styles */
+.team-performance-container {
+  width: 380px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  /* height: 380px; */
+}
+
+/* Header styles */
+.header {
+  background-color: #39CEF3;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+/* Scrollable team list */
+.team-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Team card */
+.team-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.team-card:last-child {
+  border-bottom: none;
+}
+
+/* Member rank */
+.member-rank {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00c1f4;
+  margin-right: 10px;
+}
+
+/* Member avatar */
+.member-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Member details */
+.member-details {
+  flex: 1;
+}
+
+.member-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.member-role {
+  font-size: 14px;
+  color: #999999;
+}
+
+.member-stats {
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Progress badge */
+.member-progress {
+  background-color: 	#FF00FF;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+/* View all link */
+.view-all {
+  text-align: right;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #00c1f4;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+.chart-wrappers  {
+  width: 97%;
+  background-color: #ffffff;
+  border: 1px solid #00c1f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  height: 60%;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.header h3 {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+ 
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.chart-container {
+  width: calc(100% - 20px); /* Ensures the chart touches the left border */
+  height: 300px;
+  margin-left: 0; /* Align chart to the left */
+  padding: 0; /* Removes padding */
+}
