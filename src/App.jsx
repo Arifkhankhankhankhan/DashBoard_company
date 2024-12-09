@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
 import Btn from "./components/Btn/Btn";
-import Dashboard from "./components/Dashboard/Dashboard";
 import TeamShort from "./components/Team Short/TeamShort";
 import SalesSnapshot from "./components/Sales Snapshot/SalesSnapshot";
 import LoginSnapshot from "./components/Login Snapshot/LoginSnapshot";
