@@ -30,7 +30,7 @@ const App = () => {
         <Navbar toggleSidebar={toggleSidebar} />
         <Btn />
 
-        <Dashboard />
+       
 
         <div style={{ margin: "30px 0" }}>
           <SalesSnapshot />
