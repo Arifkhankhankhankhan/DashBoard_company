@@ -4,40 +4,51 @@ import TeamPerformance from "./TeamPerformance";
 const TeamShort = () => {
   return (
     <div
+    style={{
+      padding: "20px",
+      fontFamily: "Arial, sans-serif",
+      border: "2px solid #D3E4F3",
+      borderRadius: "8px",
+      backgroundColor: "#F9FAFB",
+    }}
+  >
+    <div
       style={{
-        padding: "15px 0px",
-        fontFamily: "Arial, sans-serif",
-        paddingRight: "15px",
-        border: "2px solid #87CEEB",
+        backgroundColor: "#1DC4E9",
+        padding: "15px 30px",
+        marginBottom: "20px",
+        display: "flex", 
+        alignItems: "center", 
+        justifyContent: "flex-start", 
+        width: "fit-content", 
+       marginLeft:"-20px"
       }}
     >
+      <p
+        style={{
+          margin: 0,
+          color: "#ffffff",
+          fontSize: "20px",
+          fontWeight: "bold",
+        }}
+      >
+        TEAM SNAPSHOT
+      </p>
+    </div>
+  
+
+      {/* Flexbox layout */}
       <div
         style={{
           display: "flex",
+          flexWrap: "wrap",
+          gap: "15px",
           justifyContent: "space-between",
-          marginBottom: "20px",
         }}
       >
-        <div>
-          <div style={{ backgroundColor: "#87CEEB", padding: "10px 40px" }}>
-            <p style={{ margin: 0, color: "#ffffff", fontSize: "25px" }}>
-              Team Snapshot
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ margin: "20px 20px" }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <TeamPerformance />
-          <TeamPerformance />
-          <TeamPerformance />
-        </div>
+        <TeamPerformance title="TEAM PERFORMANCE" />
+        <TeamPerformance title="NEW ACTIVATION" />
+        <TeamPerformance title="SKU PERFORMANCE (SET)" />
       </div>
     </div>
   );
