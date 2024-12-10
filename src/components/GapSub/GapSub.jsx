@@ -108,7 +108,7 @@ const GapSub = () => {
           style={{
             backgroundColor: "#00C1F4",
             padding: "10px 15px",
-            borderRadius: "4px",
+            marginLeft:"-15.5px"
           }}
         >
           <p
