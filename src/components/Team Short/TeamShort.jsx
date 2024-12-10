@@ -7,7 +7,7 @@ const TeamShort = () => {
     style={{
       padding: "20px",
       fontFamily: "Arial, sans-serif",
-      border: "2px solid #D3E4F3",
+     border: "2px solid #00C1F4",
       borderRadius: "8px",
       backgroundColor: "#F9FAFB",
     }}
