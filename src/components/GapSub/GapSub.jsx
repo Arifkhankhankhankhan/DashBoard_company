@@ -88,7 +88,6 @@ const GapSub = () => {
     <div
       style={{
         border: "1px solid #00C1F4",
-        borderRadius: "8px",
         padding: "15px",
         fontFamily: "Arial, sans-serif",
         backgroundColor: "#FFFFFF",
