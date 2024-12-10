@@ -1,61 +1,67 @@
 .gap-analysis {
-  width: 97%;
+  width: 100%;
+  max-width: 1200px;
   background-color: #ffffff;
   border: 1px solid #00c0f9;
+  margin: 10px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
-  margin: 20px auto; /* Center on the page */
-  padding: 10px; /* Add padding for better spacing */
+  overflow: hidden;
+  padding: 20px; /* Optional padding for content spacing */
 }
 
 .gap-table {
-  width: 100%; /* Make table responsive */
+  width: calc(100% - 40px); /* Subtract margin from total width */
+  margin: 20px auto; /* Center table with a 20px margin */
   border-collapse: collapse;
-  margin: 20px 0; /* Adjust margin */
 }
 
 .gap-table th,
 .gap-table td {
-  text-align: left;
+  text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
-  font-size: 14px; /* Adjust font size */
+  font-size: 15px;
 }
 
 .gap-table th {
   background-color: #39CEF3;
   color: #263238;
-  font-size: 15px; /* Slightly larger for headings */
+  font-size: 15px;
 }
 
 .gap-analysis h2 {
-  margin-left: -10px;
+  margin-left: -20px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 1.1rem;
-  width: fit-content; /* Adjust width based on content */
+  width: fit-content;
   background-color: #39CEF3;
   color: white;
   padding: 8px;
-   /* Add rounded corners */
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .gap-analysis {
-    width: 100%; /* Use full width on smaller screens */
-    margin: 10px auto; /* Reduce margins */
+    width: 100%;
+    margin: 10px auto;
     padding: 10px;
+  }
+
+  .gap-table {
+    width: calc(100% - 20px);
+    margin: 10px auto;
   }
 
   .gap-table th,
   .gap-table td {
-    font-size: 13px; /* Reduce font size */
-    padding: 8px; /* Adjust padding */
+    font-size: 13px;
+    padding: 8px;
   }
 
   h2 {
-    font-size: 1rem; /* Adjust heading size */
+    font-size: 1rem;
     padding: 6px;
   }
 }
@@ -63,32 +69,38 @@
 @media (max-width: 768px) {
   .gap-table th,
   .gap-table td {
-    font-size: 12px; /* Further reduce font size */
+    font-size: 12px;
     padding: 6px;
   }
 
   h2 {
-    font-size: 0.9rem; /* Smaller heading */
+    font-size: 0.9rem;
     padding: 5px;
-    text-align: center; /* Center-align the heading */
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .gap-analysis {
-    margin: 5px auto; /* Minimal margins for small screens */
+    margin: 5px auto;
     padding: 5px;
+  }
+
+  .gap-table {
+    width: calc(100% - 10px);
+    margin: 5px auto;
   }
 
   .gap-table th,
   .gap-table td {
-    font-size: 11px; /* Compact font size */
-    padding: 4px; /* Compact padding */
+    font-size: 11px;
+    padding: 4px;
   }
 
   h2 {
     font-size: 0.8rem;
     padding: 4px;
     margin: 10px 0;
+   
   }
 }
