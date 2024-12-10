@@ -7,12 +7,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
   overflow: hidden;
-  padding: 20px; /* Optional padding for content spacing */
+  padding: 20px; 
 }
 
 .gap-table {
-  width: calc(100% - 40px); /* Subtract margin from total width */
-  margin: 20px auto; /* Center table with a 20px margin */
+  width: calc(100% - 40px); 
+  margin: 20px auto; 
   border-collapse: collapse;
 }
 
