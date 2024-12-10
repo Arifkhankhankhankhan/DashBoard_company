@@ -116,160 +116,144 @@ const Product = () => {
   };
 
   return (
-    <div>
-      {/* Header */}
-     
-
-      {/* Main Content */}
+    <div
+      style={{
+        padding: "20px",
+        fontFamily: "Arial, sans-serif",
+        border: "1px solid #00C1F4",
+       
+      }}
+    >
+      <Header title="INSIGHTS SNAPSHOT" />
       <div
-      
         style={{
           display: "flex",
-          justifyContent: "space-between",
-          gap: "15px",
-          padding: "20px",
-          fontFamily: "Arial, sans-serif",
-          backgroundColor: "#ffffff",
-          border: "1px solid #00C1F4",
-          borderRadius: "8px",
+          gap: "20px",
+          marginTop: "20px",
           flexWrap: "wrap",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+         
         }}
       >
-       
-        {/* Products Section */}
         <Card title="TOP 10 PRODUCTS" items={data.products} />
-
-        {/* Distributors Section */}
         <Card title="TOP 10 DISTRIBUTORS" items={data.distributors} />
-
-        {/* New Activations Section */}
         <Card title="NEW ACTIVATION" items={data.activations} />
       </div>
     </div>
   );
 };
 
-const Card = ({ title, items }) => {
-  return (
+const Header = ({ title }) => (
+  <div
+    style={{
+      backgroundColor: "#00C1F4",
+      padding: "10px",
+      textAlign: "start",
+      color: "#FFFFFF",
+      fontWeight: "bold",
+      fontSize: "18px",
+      border: "1px solid #F0F0F0",
+      width:"fit-content",
+      marginLeft:"-20px"
+    }}
+  >
+    {title}
+  </div>
+);
+
+const Card = ({ title, items }) => (
+  <div
+    style={{
+      flex: "1",
+      minWidth: "300px",
+      border: "1px solid #F0F0F0",
+      borderRadius: "8px",
+      backgroundColor: "#FFFFFF",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      overflow: "hidden",
+    }}
+  >
     <div
       style={{
-        flex: "1",
-        border: "1px solid #00C1F4",
-        borderRadius: "8px",
-        overflow: "hidden",
-        minWidth: "300px",
-        backgroundColor: "#ffffff",
+        backgroundColor: "#00C1F4",
+        color: "#FFFFFF",
+        padding: "10px",
+        fontWeight: "bold",
+        textAlign: "center",
+        borderBottom: "1px solid #F0F0F0",
       }}
     >
-      {/* Header */}
-      <div
-        style={{
-          backgroundColor: "#00C1F4",
-          padding: "10px",
-          color: "#ffffff",
-          fontWeight: "bold",
-          textAlign: "center",
-        }}
-      >
-        {title}
-      </div>
-
-      {/* Scrollable Content */}
-      <div style={{ maxHeight: "300px", overflowY: "auto", padding: "10px" }}>
-        {items.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "10px",
-              borderBottom: "1px solid #f0f0f0",
-              paddingBottom: "8px",
-            }}
-          >
-            {/* Rank */}
-            <div
-              style={{
-                fontWeight: "bold",
-                fontSize: "16px",
-                marginRight: "10px",
-                color: "#000",
-              }}
-            >
-              {item.rank}
-            </div>
-
-            {/* Image */}
-            {item.img && (
-              <img
-                src={item.img}
-                alt={item.name}
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  borderRadius: "5px",
-                  marginRight: "10px",
-                }}
-              />
-            )}
-
-            {/* Details */}
-            <div style={{ flex: 1 }}>
-              <p
-                style={{
-                  margin: 0,
-                  fontWeight: "bold",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                {item.name}
-              </p>
-              {item.setCount !== undefined && (
-                <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
-                  Set Count: {item.setCount}
-                </p>
-              )}
-              {item.value && (
-                <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
-                  Value: {item.value}
-                </p>
-              )}
-              {item.target !== undefined && (
-                <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
-                  Target: {item.target}
-                </p>
-              )}
-              {item.achieved !== undefined && (
-                <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
-                  Achieved: {item.achieved}
-                </p>
-              )}
-              {item.lastOrder !== undefined && (
-                <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
-                  Last Order: {item.lastOrder}
-                </p>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Footer */}
-      <div
-        style={{
-          textAlign: "right",
-          padding: "10px",
-          fontSize: "14px",
-          color: "#00C1F4",
-          cursor: "pointer",
-        }}
-      >
-        View All
-      </div>
+      {title}
     </div>
-  );
-};
+    <div style={{ maxHeight: "300px", overflowY: "auto", padding: "10px" }}>
+      {items.map((item, index) => (
+        <div
+          key={index}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "10px",
+            paddingBottom: "8px",
+            borderBottom: "1px solid #F0F0F0",
+          }}
+        >
+          <div style={{ marginRight: "10px", fontWeight: "bold" }}>
+            {item.rank}
+          </div>
+          <img
+            src={item.img}
+            alt={item.name}
+            style={{
+              width: "50px",
+              height: "50px",
+              marginRight: "10px",
+              borderRadius: "5px",
+              border: "1px solid #F0F0F0",
+            }}
+          />
+          <div>
+            <p style={{ margin: 0, fontWeight: "bold" }}>{item.name}</p>
+            {item.setCount !== undefined && (
+              <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
+                Set Count: {item.setCount}
+              </p>
+            )}
+            {item.value && (
+              <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
+                Value: {item.value}
+              </p>
+            )}
+            {item.target !== undefined && (
+              <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
+                Target: {item.target}
+              </p>
+            )}
+            {item.achieved !== undefined && (
+              <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
+                Achieved: {item.achieved}
+              </p>
+            )}
+            {item.lastOrder !== undefined && (
+              <p style={{ margin: 0, fontSize: "12px", color: "#666" }}>
+                Last Order: {item.lastOrder}
+              </p>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+    <div
+      style={{
+        textAlign: "right",
+        padding: "10px",
+        color: "#00C1F4",
+        fontWeight: "bold",
+        cursor: "pointer",
+        borderTop: "1px solid #F0F0F0",
+      }}
+    >
+      View All
+    </div>
+  </div>
+);
 
 export default Product;
